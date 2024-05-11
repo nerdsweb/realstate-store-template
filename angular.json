@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "supermarket-store-template": {
+    "realstate-store-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/supermarket-store-template",
+            "outputPath": "dist/realstate-store-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -85,10 +85,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "supermarket-store-template:build:production"
+              "browserTarget": "realstate-store-template:build:production"
             },
             "development": {
-              "browserTarget": "supermarket-store-template:build:development"
+              "browserTarget": "realstate-store-template:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +96,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "supermarket-store-template:build"
+            "browserTarget": "realstate-store-template:build"
           }
         },
         "test": {
