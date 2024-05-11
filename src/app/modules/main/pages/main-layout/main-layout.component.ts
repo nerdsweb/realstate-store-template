@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { CmmEcomFooterConfig } from 'src/app/common/data/utils/models/ecommerce.models';
+import { CmmEcomFooterConfig, CmmEcomSpecialFiltersConfig } from 'src/app/common/data/utils/models/ecommerce.models';
 import { icons, logos } from 'src/assets/images/image-routes';
 
 @Component({
@@ -72,6 +72,28 @@ export class MainLayoutComponent {
     }
   }
 
+  /**
+   * Veo si estoy en la vista de productos
+   */
+  inProductsView: boolean = false
+
+  /**
+   * Configuración de los filtros
+   */
+  filtersConfig: CmmEcomSpecialFiltersConfig = {
+    text: 'BUSCA TU VEHÍCULO',
+    buttonText: 'Ir',
+    bgClass: 'gray_bg',
+    textClass: 'text-white',
+    filters: [
+      'TIPO',
+      'CIUDAD',
+      'SECTOR',
+      'PRESUPUESTO DESDE',
+      'PRESUPUESTO HASTA',
+    ]
+  }
+
   @HostListener('window:resize')
   onResize(e: Event) {
 
@@ -99,6 +121,7 @@ export class MainLayoutComponent {
 
     this.currentRoute = location.href
     this.listenRouteChanges()
+    this.checkProductsViewMode()
 
   }
 
@@ -106,7 +129,15 @@ export class MainLayoutComponent {
 
     this.router.events.subscribe(event => {
       this.currentRoute = location.href
+      this.checkProductsViewMode()
     })
+
+
+  }
+
+  checkProductsViewMode() {
+    //* Veo si estoy en la vista de productos
+    this.inProductsView = location.pathname == '/products'
 
   }
 

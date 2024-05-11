@@ -17,19 +17,16 @@ export class MainHeaderComponent {
 
   navbarItems: any[] = [
     {
-      text: 'Vegetales y hortalizas',
+      text: 'Comprar',
     },
     {
-      text: 'Viveres',
+      text: 'Vender',
     },
     {
-      text: 'Snacks',
+      text: 'Alquiler',
     },
     {
-      text: 'Hogar',
-    },
-    {
-      text: 'Higiene',
+      text: 'Asesores',
     },
   ]
 
