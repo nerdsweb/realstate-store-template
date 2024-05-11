@@ -9,7 +9,7 @@
             [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div class="mx-auto w-100" [ngClass]="!currentRoute.includes('home') || smallMode? 'main_container':''">
+        <div class="mx-auto w-100 main_container">
 
             <!-- Filtros -->
             <cmp-cmm-products-filter *ngIf="inProductsView" class="vw-100"
@@ -37,6 +37,6 @@
     </main>
 
     <!-- Footer -->
-    <cmp-cmm-new-footer [config]="footerConfig"></cmp-cmm-new-footer>
+    <cmp-cmm-new-footer [config]="footerConfig" [showBusinessQualities]="false"></cmp-cmm-new-footer>
 
 </div>
