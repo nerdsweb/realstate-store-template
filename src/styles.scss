@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth !important;
 }
 
-*:not(.material-icons) {
+*:not(.material-icons, .carousel-indicators > *) {
     font-family: "montserrat" !important;
     box-sizing: border-box;
     box-sizing: border-box !important;
