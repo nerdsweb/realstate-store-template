@@ -1,29 +1,29 @@
-<div class="w-100 d-flex justify-content-center">
+<div class="w-100 h-100 d-flex justify-content-center">
 
-    <div id="carouselExampleIndicators" class="carousel slide w-100">
+    <div id="carouselExampleIndicators" class="carousel position-relative slide w-100 h-100">
 
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                class="active bg-white" aria-current="true" aria-label="Slide 1"></button>
+                class="active bg-white indicator_button" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
-                class="bg-white"></button>
+                class="bg-white indicator_button"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
-                class="bg-white"></button>
+                class="bg-white indicator_button"></button>
         </div>
 
-        <div class="carousel-inner w-100">
-            <div class="carousel-item active">
+        <div class="carousel-inner w-100 h-100">
+            <div class="carousel-item carousel_image active">
                 <img [src]="images.product1" class="w-100" alt="">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel_image">
                 <img [src]="images.product2" class="w-100" alt="">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel_image">
                 <img [src]="images.product3" class="w-100" alt="">
             </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -32,7 +32,7 @@
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
 
     </div>
 

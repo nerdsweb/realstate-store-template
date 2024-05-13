@@ -1,0 +1,38 @@
+<div class="d-flex flex-column rounded product_ad">
+
+    <!-- Carrusel -->
+    <div class="w-100 d-flex justify-content-center" style="aspect-ratio: 16/9;">
+
+        <div [id]="carouselId" class="carousel position-relative slide w-100 h-100">
+
+            <div class="carousel-indicators">
+                <button *ngFor="let item of product.images; let i = index" type="button"
+                    [attr.data-bs-target]="'#' + carouselId" [attr.data-bs-slide-to]="i"
+                    class="active bg-white indicator_button"></button>
+            </div>
+
+            <span *ngIf="product.badgeText" class="badge p-2 cmm-txt-thin-bold text-black">
+                {{product.badgeText}}
+            </span>
+
+            <div class="carousel-inner w-100 h-100" style="border-radius: 30px;">
+
+                <div *ngFor="let item of product.images" class="carousel-item carousel_image  active"
+                    style="border-radius: 30px;">
+                    <img [src]="item" class="w-100" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center flex-column align-items-center mt-3">
+
+        <h3 class="mb-3">{{product.name}}</h3>
+        <span>{{product.previousPrice}}</span>
+        <span class="cmm-txt-thin-bold">{{product.price}}</span>
+
+    </div>
+
+</div>

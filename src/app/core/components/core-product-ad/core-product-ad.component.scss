@@ -1,0 +1,26 @@
+.product_ad {
+    width: 280px;
+
+}
+
+.indicator_button {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.carousel_image {
+    aspect-ratio: 16/9 !important;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    border-radius: 0;
+    top: 10%;
+    z-index: 12;
+}
+
+.badge:hover {
+    scale: 1.08;
+}

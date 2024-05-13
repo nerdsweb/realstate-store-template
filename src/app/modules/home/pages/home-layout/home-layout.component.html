@@ -1,7 +1,19 @@
 <!-- Imagen principal -->
-<div class="d-flex flex-column overflow-hidden align-items-center w-100">
+<div class="row g-0 flex-column overflow-hidden align-items-center w-100 bg-white">
 
     <!-- Imagen de fondo -->
-    <cmp-home-carousel class="w-100 mb-5" style="height: 700px;"></cmp-home-carousel>
+    <cmp-home-carousel class="col-12 mb-5"></cmp-home-carousel>
+
+    <div class="col-12">
+
+        <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">LA LLAVE A UNA NUEVA VIDA</h2>
+
+        <p class="cmm-txt-project-primary text-center mb-5">A UN CLICK DE DISTANCIA</p>
+
+        <!-- publicidades -->
+        <cmp-core-product-ad *ngFor="let product of products; let i = index" [product]="product"
+            carouselId="{{'carousel' + i}}"></cmp-core-product-ad>
+
+    </div>
 
 </div>
