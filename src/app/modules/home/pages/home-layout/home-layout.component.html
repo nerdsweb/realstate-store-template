@@ -10,9 +10,13 @@
 
         <p class="cmm-txt-project-primary text-center mb-5">A UN CLICK DE DISTANCIA</p>
 
-        <!-- publicidades -->
-        <cmp-core-product-ad *ngFor="let product of products; let i = index" [product]="product"
-            carouselId="{{'carousel' + i}}"></cmp-core-product-ad>
+        <div class="d-flex justify-content-center gap-3 my-5">
+
+            <!-- publicidades -->
+            <cmp-core-product-ad *ngFor="let product of products; let i = index" [product]="product"
+                carouselId="{{'carousel' + i}}"></cmp-core-product-ad>
+
+        </div>
 
     </div>
 

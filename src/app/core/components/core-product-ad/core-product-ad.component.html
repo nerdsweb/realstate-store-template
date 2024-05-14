@@ -8,7 +8,9 @@
             <div class="carousel-indicators">
                 <button *ngFor="let item of product.images; let i = index" type="button"
                     [attr.data-bs-target]="'#' + carouselId" [attr.data-bs-slide-to]="i"
-                    class="active bg-white indicator_button"></button>
+                    class="bg-white indicator_button" [ngClass]="i == 0? 'active':''" [attr.aria-current]="i == 0"
+                    [attr.aria-label]="'Slide '+ i+1">
+                </button>
             </div>
 
             <span *ngIf="product.badgeText" class="badge p-2 cmm-txt-thin-bold text-black">
@@ -17,9 +19,9 @@
 
             <div class="carousel-inner w-100 h-100" style="border-radius: 30px;">
 
-                <div *ngFor="let item of product.images" class="carousel-item carousel_image  active"
-                    style="border-radius: 30px;">
-                    <img [src]="item" class="w-100" alt="">
+                <div *ngFor="let item of product.images; let i = index" class="carousel-item carousel_image"
+                    style="border-radius: 30px;" [ngClass]="i == 0? 'active':''">
+                    <img [src]="item" class="w-100" alt="" style="aspect-ratio: 12/9;">
                 </div>
 
             </div>

@@ -30,7 +30,29 @@ export class HomeLayoutComponent {
         images.product2,
         images.product3,
       ]
-    }
+    },
+    {
+      name: 'La Lagunita',
+      price: 'Ref.23.00',
+      previousPrice: 'Ref.22.00',
+      badgeText: 'EN ALQUILER',
+      images: [
+        images.product2,
+        images.product1,
+        images.product3,
+      ]
+    },
+    {
+      name: 'La Lagunita',
+      price: 'Ref.23.00',
+      previousPrice: 'Ref.22.00',
+      badgeText: 'EN VENTA',
+      images: [
+        images.product4,
+        images.product1,
+        images.product2,
+      ]
+    },
   ]
 
   constructor(
