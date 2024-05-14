@@ -10,11 +10,68 @@
 
         <p class="cmm-txt-project-primary text-center mb-5">A UN CLICK DE DISTANCIA</p>
 
-        <div class="d-flex justify-content-center gap-3 my-5">
+        <div class="row g-0 justify-content-center mx-auto w-100 my-5">
 
             <!-- publicidades -->
-            <cmp-core-product-ad *ngFor="let product of products; let i = index" [product]="product"
+            <cmp-core-product-ad *ngFor="let product of products; let i = index"
+                class="col-md-4 d-flex justify-content-center" [product]="product"
                 carouselId="{{'carousel' + i}}"></cmp-core-product-ad>
+
+        </div>
+
+    </div>
+
+    <div class="col-12 my-5">
+
+        <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">PROPIEDADES DESTACADAS</h2>
+        <p class="cmm-txt-project-primary text-center mb-5">¡LA PROPIEDAD DE TUS SUEÑO ESTÁ EN NUESTRO INVENTARIO!</p>
+
+        <div class="row g-0 w-100 align-items-center">
+
+            <div class="col-md-6" style="height: 100vh;max-height: 900px;">
+
+                <div class="w-100 h-100 d-flex flex-column">
+
+                    <div class="flip_box w-100 h-100">
+                        <div class="w-100 h-100 flip_box_inner">
+
+                            <div class="flip_front h-100 position-absolute">
+                                <div class="w-100 h-100 product_bg cursor-pointer"
+                                    [style.background-image]="'url(' + images.product7 +')'">
+                                </div>
+                            </div>
+
+                            <div class="flip_back h-100 position-absolute">
+                                <div class="w-100 h-100 product_bg cursor-pointer"
+                                    [style.background-image]="'url(' + images.product8 +')'">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <span class="fs-20 text-center my-3">La Lagunita</span>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="row w-100 g-0">
+
+                    <div *ngFor="let item of outstandingProperties"
+                        class="col-6 p-3 d-flex justify-content-center align-items-center flex-column">
+
+                        <img [src]="item.image" class="cursor-pointer small-scale" style="width: 100%;aspect-ratio: 1;">
+
+                        <span class="fs-20 text-center my-3">{{item.name}}</span>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 

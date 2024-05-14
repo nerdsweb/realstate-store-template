@@ -55,6 +55,28 @@ export class HomeLayoutComponent {
     },
   ]
 
+  /**
+   * Propiedades destacadas
+   */
+  outstandingProperties = [
+    {
+      image: images.product4,
+      name: 'La Lagunita'
+    },
+    {
+      image: images.product5,
+      name: 'La Lagunita'
+    },
+    {
+      image: images.product2,
+      name: 'La Lagunita'
+    },
+    {
+      image: images.product4,
+      name: 'La Lagunita'
+    },
+  ]
+
   constructor(
     private router: Router
   ) { }
