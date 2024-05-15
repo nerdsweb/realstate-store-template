@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrealstate_store_template=self.webpackChunkrealstate_store_template||[]).push([[592],{8081:(l,s,t)=>{t.d(s,{I:()=>n});var e=t(6814),o=t(4766),a=t(5879);let n=(()=>{class _{static#t=this.\u0275fac=function(c){return new(c||_)};static#_=this.\u0275mod=a.oAB({type:_});static#a=this.\u0275inj=a.cJS({imports:[e.ez,o.n]})}return _})()}}]);
