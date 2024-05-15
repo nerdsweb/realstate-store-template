@@ -1,0 +1,21 @@
+<div class="d-flex rounded flex-column" style="width: 300px;">
+
+    <div class="w-100 rounded-top overflow-hidden d-flex justify-content-center" style="height: 300px;">
+
+        <img [src]="product.image" class="h-100 small-scale" alt="">
+
+    </div>
+
+    <!-- Descripción -->
+    <div class="d-flex rounded-bottom flex-column p-3" style="background-color: #E4E4E4;">
+
+        <span
+            class="cmm-txt-project-primary cmm-txt-thin-bold fs-26 text-center">{{product.currency}}{{product.price}}</span>
+
+        <span class="fs-20 text-center">{{product.description}}</span>
+
+        <span class="fs-20 cmm-txt-project-primary text-center">{{product.name}}</span>
+
+    </div>
+
+</div>

@@ -93,13 +93,18 @@
 
 .parallax_bg {
     /* Full height */
-    height: 100%;
-
+    height: 200px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all ease 0.5s;
+}
+
+.parallax_bg:hover {
+    height: 250px;
+    transition: all ease 0.5s;
 }
 
 .product_bg {

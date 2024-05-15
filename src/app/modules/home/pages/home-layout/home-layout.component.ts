@@ -77,6 +77,63 @@ export class HomeLayoutComponent {
     },
   ]
 
+  /**
+   * Asesores
+   */
+  advisors: any[] = [
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+
+  ]
+
+  /**
+   * Acciones
+   */
+  shares: string[] = [
+    images.product4,
+    images.product4,
+    images.product4,
+    images.product4,
+  ]
+
   constructor(
     private router: Router
   ) { }

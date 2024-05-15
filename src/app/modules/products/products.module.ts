@@ -8,6 +8,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { ProductsOverviewLayoutComponent } from './pages/products-overview-layout/products-overview-layout.component';
 import { ProductsDetailLayoutComponent } from './pages/products-detail-layout/products-detail-layout.component';
 import { ProductsDetailComponent } from './components/products-detail/products-detail.component';
+import { ProductsCardComponent } from './components/products-card/products-card.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ProductsDetailComponent } from './components/products-detail/products-d
     ProductsOverviewLayoutComponent,
     ProductsDetailLayoutComponent,
     ProductsDetailComponent,
+    ProductsCardComponent,
   ],
   imports: [
     CommonModule,

@@ -11,136 +11,112 @@ export class ProductsLayoutComponent {
 
   products: any[] = [
     {
-      image: images.product1,
-      title: 'HARINA DE MAIZ PAN 1kg',
-      price: '1,25',
-      previousprice: '1,50',
+      image: images.product12,
+      price: '450.000',
       currency: '$',
-      id: '1'
-    },
-    {
-      image: images.product2,
-      title: 'PASTA PLUMA MARY 1KG',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '2'
-    },
-    {
-      image: images.product3,
-      title: 'SARDINAS EN SALSA DE TOMATE',
-      brand: 'MARGARITA',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '3'
-    },
-    {
-      image: images.product4,
-      title: 'KETCHUP PAMPERO 300ML',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '4'
-    },
-    {
-      image: images.product6,
-      title: 'ATUN EN ACEITE EVEBA 1KG',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '5'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
       image: images.product7,
-      title: 'QUESO CREMA BUFILCIM',
-      price: '1,25',
-      previousprice: '1,50',
+      price: '450.000',
       currency: '$',
-      id: '6'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
-      image: images.product8,
-      title: 'JAMÓN ENDIABLADO',
-      brand: 'PLUMROSE',
-      price: '1,25',
-      previousprice: '1,50',
+      image: images.product11,
+      price: '450.000',
       currency: '$',
-      id: '7'
-    },
-    {
-      image: images.product6,
-      title: 'ARROZ MARY 1KG',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '8'
-    },
-    {
-      image: images.product1,
-      title: 'HARINA DE MAIZ PAN 1kg',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '1'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
       image: images.product2,
-      title: 'PASTA PLUMA MARY 1KG',
-      price: '1,25',
-      previousprice: '1,50',
+      price: '450.000',
       currency: '$',
-      id: '2'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
       image: images.product3,
-      title: 'SARDINAS EN SALSA DE TOMATE',
-      brand: 'MARGARITA',
-      price: '1,25',
-      previousprice: '1,50',
+      price: '450.000',
       currency: '$',
-      id: '3'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
-      image: images.product4,
-      title: 'KETCHUP PAMPERO 300ML',
-      price: '1,25',
-      previousprice: '1,50',
+      image: images.product12,
+      price: '450.000',
       currency: '$',
-      id: '4'
-    },
-    {
-      image: images.product6,
-      title: 'ATUN EN ACEITE EVEBA 1KG',
-      price: '1,25',
-      previousprice: '1,50',
-      currency: '$',
-      id: '5'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
       image: images.product7,
-      title: 'QUESO CREMA BUFILCIM',
-      price: '1,25',
-      previousprice: '1,50',
+      price: '450.000',
       currency: '$',
-      id: '6'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
-      image: images.product8,
-      title: 'JAMÓN ENDIABLADO',
-      brand: 'PLUMROSE',
-      price: '1,25',
-      previousprice: '1,50',
+      image: images.product11,
+      price: '450.000',
       currency: '$',
-      id: '7'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
     {
-      image: images.product6,
-      title: 'ARROZ MARY 1KG',
-      price: '1,25',
-      previousprice: '1,50',
+      image: images.product2,
+      price: '450.000',
       currency: '$',
-      id: '8'
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+    {
+      image: images.product3,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+    {
+      image: images.product7,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+    {
+      image: images.product11,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+  ]
+
+  cheap: any[] = [
+    {
+      image: images.product3,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+    {
+      image: images.product7,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
+    },
+    {
+      image: images.product11,
+      price: '450.000',
+      currency: '$',
+      description: '6 HAB 3/1 BAÑOS 3 EST',
+      name: 'LA LAGUNITA'
     },
   ]
 

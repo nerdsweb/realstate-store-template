@@ -4,7 +4,7 @@
     <!-- Imagen de fondo -->
     <cmp-home-carousel class="col-12 mb-5"></cmp-home-carousel>
 
-    <div class="col-12">
+    <section class="col-12">
 
         <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">LA LLAVE A UNA NUEVA VIDA</h2>
 
@@ -19,9 +19,10 @@
 
         </div>
 
-    </div>
+    </section>
 
-    <div class="col-12 my-5">
+    <!-- Sección de propiedades destacas -->
+    <section class="col-12 my-5">
 
         <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">PROPIEDADES DESTACADAS</h2>
         <p class="cmm-txt-project-primary text-center mb-5">¡LA PROPIEDAD DE TUS SUEÑO ESTÁ EN NUESTRO INVENTARIO!</p>
@@ -75,6 +76,40 @@
 
         </div>
 
-    </div>
+    </section>
+
+    <!-- Parallax -->
+    <section class="col-12 my-5 parallax_bg" [style.background-image]="'url(' + images.product12 +')'">
+    </section>
+
+    <!-- Asesores -->
+    <section class="col-12 my-5">
+
+        <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">NUESTROS ASESORES</h2>
+
+        <div class="row w-100 g-0">
+
+            <div *ngFor="let advisor of advisors" class="col-md-3 my-5">
+                <cmp-home-advisor [advisorData]="advisor"></cmp-home-advisor>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Acciones -->
+    <section class="col-12 my-5">
+
+        <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">VENTA DE ACCIONES EN</h2>
+
+        <div class="row w-100 g-0">
+
+            <div *ngFor="let share of shares" class="col-md-3 my-5 d-flex justify-content-center align-items-center">
+                <img [src]="share" alt="" style="height: 200px;">
+            </div>
+
+        </div>
+
+    </section>
 
 </div>

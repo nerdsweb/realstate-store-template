@@ -2,20 +2,43 @@
 
     <section class="col-12 my-5">
 
+        <p class="text-center cmm-txt-thin-bold fs-26">LA LLAVE A UNA NUEVA VIDA</p>
+        <p class="text-center cmm-txt-thin-bold fs-20">A UN CLICK DE DISTANCIA</p>
+
         <!-- productos -->
         <div class="row g-0 w-100 justify-content-start mt-5">
 
-            <div *ngFor="let product of products"
-                class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-start mb-5">
+            <div *ngFor="let product of products" class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-5">
 
-                <cmp-cmm-product-card-v2 class="w-100 d-flex justify-content-center" [product]="product"
+                <!-- <cmp-cmm-product-card-v2 class="w-100 d-flex justify-content-center" [product]="product"
                     [configStyle]="{priceColor: '#E88A10', button: {outlined: true, customBg: 'btn-project-secundary-outline'}}"
-                    (addProduct)="navigate($event)"></cmp-cmm-product-card-v2>
+                    (addProduct)="navigate($event)"></cmp-cmm-product-card-v2> -->
+                <cmp-products-card [product]="product"></cmp-products-card>
 
             </div>
 
             <!-- Paginador -->
             <cmp-cmm-paginator class="col-12 px-4" [posts]="products"></cmp-cmm-paginator>
+
+        </div>
+
+    </section>
+
+    <section class="col-12 my-5">
+
+        <h2 class="cmm-txt-project-primary cmm-txt-thin-bold text-center">DENTRO DE TU PRESUPUESTO</h2>
+        <p class="cmm-txt-project-primary text-center mb-5">OTRAS PROPIEDADES QUE PUEDEN SER DE INTERÉS</p>
+
+        <div class="row g-0 w-100">
+
+            <div *ngFor="let product of cheap" class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-5">
+
+                <!-- <cmp-cmm-product-card-v2 class="w-100 d-flex justify-content-center" [product]="product"
+                    [configStyle]="{priceColor: '#E88A10', button: {outlined: true, customBg: 'btn-project-secundary-outline'}}"
+                    (addProduct)="navigate($event)"></cmp-cmm-product-card-v2> -->
+                <cmp-products-card [product]="product"></cmp-products-card>
+
+            </div>
 
         </div>
 
