@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CmmEcomProductDetailModelv2 } from 'src/app/common/data/utils/models/ecommerce.models';
+import { CmmEcomProductDetailModelv2, CmmEcomRealstateDetailModel } from 'src/app/common/data/utils/models/ecommerce.models';
 import { icons, images } from 'src/assets/images/image-routes';
 
 @Component({
@@ -12,23 +12,45 @@ export class ProductsDetailLayoutComponent {
 
   looks = []
 
-  product: CmmEcomProductDetailModelv2 = {
+  product: CmmEcomRealstateDetailModel = {
     id: '1',
     images: [
       images.product6,
+      images.product12,
+      images.product10,
+      images.product12,
+      images.product12,
+      images.product12,
+      images.product12,
+      images.product12,
+      images.product12,
     ],
     mainImage: images.product6,
-    name: 'PASTA PLUMA SUPERIOR',
-    brand: 'MARY',
-    price: '1,75',
-    quantity: 1,
-    currency: 'S',
-    aditionalInfo: [
+    name: 'La Lagunita',
+    modality: 'EN VENTA',
+    currency: 'USD',
+    previousPrice: '650.000',
+    price: '500.000',
+    description: 'Exclusiva propiedad ubicada en la lagunita cerca del country club, a 85 metros del prestigioso centro comercial de la zona, pisos de mármol.',
+    equipment: 'Cocina, salón, comedor, vestier, terraza cubierta, bar, lavadero, baño auxiliar, closet, maletero, TV e internet, línea telefónica, wifi, gas directo, equipado con electrodomésticos, pisos de cerámica, Además cuenta con jardín, salón de fiesta, ascensor, vigilancia y pozo de agua.',
+    details: [
       {
-        title: 'SKU',
-        text: '48234829449493'
-      }
-    ],
+        icon: 'straighten',
+        info: '350 Mt2 de construcción'
+      },
+      {
+        icon: 'bed',
+        info: '5 habitaciones'
+      },
+      {
+        icon: 'shower',
+        info: '7/2 Baños'
+      },
+      {
+        icon: 'directions_car',
+        info: '4 puestos'
+      },
+    ]
   }
 
   products: any[] = [

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CmmEcomRealstateDetailModel } from 'src/app/common/data/utils/models/ecommerce.models';
 import { images } from 'src/assets/images/image-routes';
 
 @Component({
@@ -8,7 +9,7 @@ import { images } from 'src/assets/images/image-routes';
 })
 export class ProductsDetailComponent {
 
-  @Input() product: any
+  @Input() product!: CmmEcomRealstateDetailModel
 
   /**
    * Index de la imagen a mostrar
@@ -20,53 +21,5 @@ export class ProductsDetailComponent {
   choosenSize: number = 0
 
   constructor() { }
-
-  /**
-   * Añade más unidades del producto
-   */
-  addProductUnit() {
-
-    this.product.quantity += 1
-
-  }
-
-  /**
-   * Elimina unidades del producto
-   */
-  removeProductUnit() {
-
-    this.product.quantity -= 1
-
-    if (this.product.quantity < 1) {
-      this.product.quantity = 1
-    }
-
-  }
-
-  /**
-   * Cambia la imagen que se está mostrando
-   * @param next 
-   */
-  changeMainImageIndex(next: boolean) {
-
-    if (next) {
-
-      this.mainImageIndex += 1
-
-      if (this.mainImageIndex >= this.product.images.length) {
-        this.mainImageIndex = 0
-      }
-
-    } else {
-
-      if (this.mainImageIndex <= 0) {
-
-        this.mainImageIndex = this.product.images.length - 1
-
-      }
-
-    }
-
-  }
 
 }
