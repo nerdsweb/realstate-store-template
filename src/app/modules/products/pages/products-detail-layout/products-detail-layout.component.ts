@@ -81,6 +81,27 @@ export class ProductsDetailLayoutComponent {
     },
   ]
 
+  /**
+   * Asesores
+   */
+  advisors: any[] = [
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+    {
+      image: images.product1,
+      name: 'Anastasia Pérez',
+      position: 'Asesor inmobiliario'
+    },
+  ]
+
   promos = []
 
   items: any[] = []
