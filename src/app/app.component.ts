@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit() {
 
     document.documentElement.style.setProperty('--v-dynamic-primary', '#07173B');
-    document.documentElement.style.setProperty('--v-dynamic-secundary', '#07173B');
+    document.documentElement.style.setProperty('--v-dynamic-secundary', '#016BFF');
     // document.documentElement.style.setProperty('--v-dynamic-tertiary', '#801660');
 
   }

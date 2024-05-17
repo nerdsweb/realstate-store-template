@@ -91,7 +91,9 @@ export class MainLayoutComponent {
       'SECTOR',
       'PRESUPUESTO DESDE',
       'PRESUPUESTO HASTA',
-    ]
+    ],
+    buttonIcon: true,
+    buttonBgClass: 'cmm-bg-project-secundary'
   }
 
   @HostListener('window:resize')
