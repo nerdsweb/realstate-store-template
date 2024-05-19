@@ -1,13 +1,13 @@
 {
   "name": "realstate-store-template",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/realstate-store-template/"
+    "deploy": "ng deploy --base-href=/realstate-store-template/ --no-silent"
   },
   "private": true,
   "dependencies": {
