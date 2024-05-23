@@ -36,4 +36,12 @@ export const images = {
     products_bg: 'assets/images/products_bg.jpg',
     beauty_bg: 'assets/images/beauty_bg.png',
     health_bg: 'assets/images/health_bg.png',
+    advisor1: 'assets/images/advisor1.jpg',
+    advisor2: 'assets/images/advisor2.jpg',
+    advisor3: 'assets/images/advisor3.jpg',
+    parallax: 'assets/images/parallax.jpg',
+    stock_exchange1: 'assets/images/stock_exchange1.jpg',
+    stock_exchange2: 'assets/images/stock_exchange2.jpg',
+    stock_exchange3: 'assets/images/stock_exchange3.jpg',
+    stock_exchange4: 'assets/images/stock_exchange4.jpg',
 }
