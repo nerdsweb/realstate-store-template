@@ -82,42 +82,42 @@ export class HomeLayoutComponent {
    */
   advisors: any[] = [
     {
-      image: images.product1,
+      image: images.advisor1,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor2,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor3,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor1,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor2,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor3,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor1,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
     {
-      image: images.product1,
+      image: images.advisor2,
       name: 'Anastasia Pérez',
       position: 'Asesor inmobiliario'
     },
@@ -128,10 +128,10 @@ export class HomeLayoutComponent {
    * Acciones
    */
   shares: string[] = [
-    images.product4,
-    images.product4,
-    images.product4,
-    images.product4,
+    images.stock_exchange1,
+    images.stock_exchange2,
+    images.stock_exchange3,
+    images.stock_exchange4,
   ]
 
   constructor(
