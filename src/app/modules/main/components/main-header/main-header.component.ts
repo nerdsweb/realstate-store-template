@@ -20,15 +20,15 @@ export class MainHeaderComponent {
   navbarItems: any[] = [
     {
       text: 'Comprar',
-      link: '/products'
+      link: '/Productos'
     },
     {
       text: 'Vender',
-      link: '/products'
+      link: '/Productos'
     },
     {
       text: 'Alquiler',
-      link: '/products'
+      link: '/Productos'
     },
     {
       text: 'Asesores',

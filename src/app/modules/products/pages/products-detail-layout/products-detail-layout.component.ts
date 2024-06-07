@@ -117,7 +117,7 @@ export class ProductsDetailLayoutComponent {
    * @param id
    */
   navigate(id: string) {
-    this.router.navigate(['/products/detail'])
+    this.router.navigate(['/Productos/Detalle'])
   }
 
 }
