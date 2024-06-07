@@ -1,5 +1,7 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { CmmSearchDialogComponent } from 'src/app/common/components/ecommerce/cmm-search-dialog/cmm-search-dialog.component';
 import { CmmDialogService } from 'src/app/common/services/dialogs.service';
 import { icons, images, logos } from 'src/assets/images/image-routes';
@@ -18,15 +20,19 @@ export class MainHeaderComponent {
   navbarItems: any[] = [
     {
       text: 'Comprar',
+      link: '/products'
     },
     {
       text: 'Vender',
+      link: '/products'
     },
     {
       text: 'Alquiler',
+      link: '/products'
     },
     {
       text: 'Asesores',
+      sectionLink: 'advisors'
     },
   ]
 
@@ -59,8 +65,9 @@ export class MainHeaderComponent {
   showed: string = ''
 
   constructor(
-    private dialog: MatDialog,
-    private dialogsService: CmmDialogService
+    private dialogsService: CmmDialogService,
+    private viewportScroller: ViewportScroller,
+    private router: Router
   ) { }
 
   /**
@@ -86,6 +93,25 @@ export class MainHeaderComponent {
   openSearch() {
 
     this.dialogsService.CmmOpenSearchDialog({ inputMode: 'supermarket' })
+
+  }
+
+  /**
+   * Me lleva a una sección de la página
+   * @param elementId 
+   */
+  navigateAnchor(elementId: string) {
+
+    if (!location.href.includes('home')) {
+      this.router.navigate(['/home'])
+
+      setTimeout(() => {
+        this.viewportScroller.scrollToAnchor(elementId)
+      }, 500);
+
+    } else {
+      this.viewportScroller.scrollToAnchor(elementId)
+    }
 
   }
 

@@ -14,9 +14,14 @@
             <!-- Parte de iconos, input y navbar -->
             <div class="col-sm-9 d-flex gap-2 justify-content-evenly">
 
-                <a *ngFor="let item of navbarItems"
-                    class="text-decoration-none text-nowrap text-black cmm-txt-thin-bold text_hover_primary"
-                    routerLink="/products">{{item.text}}</a>
+                <span *ngFor="let item of navbarItems">
+                    <a *ngIf="!item.sectionLink"
+                        class="text-decoration-none text-nowrap text-black cmm-txt-thin-bold text_hover_primary"
+                        [routerLink]="item.link">{{item.text}}</a>
+                    <a *ngIf="item.sectionLink"
+                        class="text-decoration-none cursor-pointer text-nowrap text-black cmm-txt-thin-bold text_hover_primary"
+                        (click)="navigateAnchor(item.sectionLink)">{{item.text}}</a>
+                </span>
 
             </div>
 

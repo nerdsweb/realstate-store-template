@@ -26,7 +26,7 @@ import { AppRoutingModule, routes } from './app-routing.module';
     RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" }),
+    RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled", anchorScrolling: "enabled" }),
   ],
   providers: [
     CmmDataService,

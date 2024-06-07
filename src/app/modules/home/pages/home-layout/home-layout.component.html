@@ -89,7 +89,7 @@
     </section>
 
     <!-- Parallax -->
-    <section class="col-12 my-5 parallax_bg" [style.background-image]="'url(' + images.parallax +')'">
+    <section id="advisors" class="col-12 my-5 parallax_bg" [style.background-image]="'url(' + images.parallax +')'">
     </section>
 
     <!-- Asesores -->
@@ -100,7 +100,7 @@
         <div class="row w-100 g-0">
 
             <div *ngFor="let advisor of advisors" class="col-md-3 my-5">
-                <cmp-home-advisor [advisorData]="advisor"></cmp-home-advisor>
+                <cmp-core-advisor [advisorData]="advisor"></cmp-core-advisor>
             </div>
 
         </div>
