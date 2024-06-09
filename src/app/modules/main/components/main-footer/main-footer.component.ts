@@ -8,7 +8,7 @@ import { icons, logos } from 'src/assets/images/image-routes';
 })
 export class MainFooterComponent {
 
-  mainLogo: string = logos.daves
+  mainLogo: string = logos.urban
 
   icons = icons
 
