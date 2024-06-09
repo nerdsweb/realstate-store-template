@@ -12,8 +12,8 @@ export const icons = {
 }
 
 export const logos = {
-    daves: 'assets/images/logos/daves.svg',
-    freshmarket: 'assets/images/logos/freshmarket.svg'
+    urban: 'assets/images/logos/urban.svg',
+    urban_white: 'assets/images/logos/urban_white.svg',
 }
 
 export const images = {
