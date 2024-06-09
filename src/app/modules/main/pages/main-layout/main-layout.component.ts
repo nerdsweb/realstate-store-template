@@ -43,8 +43,8 @@ export class MainLayoutComponent {
         text: 'Empaque exclusivo por marca'
       },
     ],
-    mainLogo: logos.freshmarket,
-    mainLogoSize: { width: '75px', height: '110px' },
+    mainLogo: logos.urban_white,
+    mainLogoSize: { width: '150px', height: '42px' },
     businessInfo: {
       name: "Dave's",
       phone: '+58 0424-5555607',
