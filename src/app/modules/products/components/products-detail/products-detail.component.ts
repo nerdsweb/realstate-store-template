@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CmmEcomRealstateDetailModel } from 'src/app/common/data/utils/models/ecommerce.models';
+import { CmmEcomRealstateDetailModel } from 'nerdsweb-common';
 import { images } from 'src/assets/images/image-routes';
 
 @Component({
